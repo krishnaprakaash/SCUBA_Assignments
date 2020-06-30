@@ -1,0 +1,40 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Assignment"  parallel="methods" thread-count="2" > <!--  Task 5 -->
+	<test name="TestNG Assignment - Test 1">
+		<parameter name="number1" value="32"></parameter> <!--  Task 3 -->
+		<parameter name="number2" value="4"></parameter>
+		
+		<groups>
+			<run>
+				<include name="product"></include>
+				<include name="exp"></include>
+				<exclude name="sum"></exclude>
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.assignments.assignment1"></class>
+		</classes>
+	</test>
+	
+	<test name="TestNG Assignment - Test 2">
+		<parameter name="number1" value="16"></parameter>
+		<parameter name="number2" value="2"></parameter>
+		
+		<groups> <!-- Task 4 -->
+			<run>
+				<exclude name="product"></exclude> 
+				<include name="sum"></include>
+				<include name="div"></include> 
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="com.assignments.assignment1"></class>
+		</classes>
+	</test>
+</suite>
+	
+	
+	
