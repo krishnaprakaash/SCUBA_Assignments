@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="10" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[TestNG Assignment -> testMultiply assertion passed for inputs 32, 4]]>
+    </line>
+    <line>
+      <![CDATA[TestNG Assignment -> testExponent assertion passed for inputs 1, 2]]>
+    </line>
+    <line>
+      <![CDATA[TestNG Assignment -> testExponent assertion passed for inputs 2, 1]]>
+    </line>
+    <line>
+      <![CDATA[TestNG Assignment -> testExponent assertion passed for inputs 1, 1]]>
+    </line>
+    <line>
+      <![CDATA[TestNG Assignment -> testDivide assertion passed for inputs 16, 2]]>
+    </line>
+    <line>
+      <![CDATA[TestNG Assignment -> testAdd assertion passed for inputs 16, 2]]>
+    </line>
+  </reporter-output>
+  <suite name="Assignment" duration-ms="167" started-at="2020-07-01T08:36:51 AST" finished-at="2020-07-01T08:36:51 AST">
+    <groups>
+      <group name="div">
+        <method signature="assignment1.testDivide(int, int)[pri:0, instance:com.assignments.assignment1@68bbe345]" name="testDivide" class="com.assignments.assignment1"/>
+      </group> <!-- div -->
+      <group name="product">
+        <method signature="assignment1.testMultiply(int, int)[pri:0, instance:com.assignments.assignment1@7b49cea0]" name="testMultiply" class="com.assignments.assignment1"/>
+      </group> <!-- product -->
+      <group name="sum">
+        <method signature="assignment1.testAdd(int, int)[pri:0, instance:com.assignments.assignment1@68bbe345]" name="testAdd" class="com.assignments.assignment1"/>
+      </group> <!-- sum -->
+      <group name="exp">
+        <method signature="assignment1.testExponent(int, int)[pri:0, instance:com.assignments.assignment1@7b49cea0]" name="testExponent" class="com.assignments.assignment1"/>
+      </group> <!-- exp -->
+    </groups>
+    <test name="TestNG Assignment - Test 1" duration-ms="89" started-at="2020-07-01T08:36:51 AST" finished-at="2020-07-01T08:36:51 AST">
+      <class name="com.assignments.assignment1">
+        <test-method status="PASS" signature="testMultiply(int, int)[pri:0, instance:com.assignments.assignment1@7b49cea0]" name="testMultiply" duration-ms="17" started-at="2020-07-01T08:36:51 AST" finished-at="2020-07-01T08:36:51 AST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[32]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG Assignment -> testMultiply assertion passed for inputs 32, 4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMultiply -->
+        <test-method status="PASS" signature="testExponent(int, int)[pri:0, instance:com.assignments.assignment1@7b49cea0]" name="testExponent" duration-ms="17" started-at="2020-07-01T08:36:51 AST" data-provider="numbers" finished-at="2020-07-01T08:36:51 AST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG Assignment -> testExponent assertion passed for inputs 1, 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testExponent -->
+        <test-method status="PASS" signature="testExponent(int, int)[pri:0, instance:com.assignments.assignment1@7b49cea0]" name="testExponent" duration-ms="3" started-at="2020-07-01T08:36:51 AST" data-provider="numbers" finished-at="2020-07-01T08:36:51 AST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG Assignment -> testExponent assertion passed for inputs 2, 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testExponent -->
+        <test-method status="PASS" signature="testExponent(int, int)[pri:0, instance:com.assignments.assignment1@7b49cea0]" name="testExponent" duration-ms="2" started-at="2020-07-01T08:36:51 AST" data-provider="numbers" finished-at="2020-07-01T08:36:51 AST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG Assignment -> testExponent assertion passed for inputs 1, 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testExponent -->
+      </class> <!-- com.assignments.assignment1 -->
+    </test> <!-- TestNG Assignment - Test 1 -->
+    <test name="TestNG Assignment - Test 2" duration-ms="6" started-at="2020-07-01T08:36:51 AST" finished-at="2020-07-01T08:36:51 AST">
+      <class name="com.assignments.assignment1">
+        <test-method status="PASS" signature="testAdd(int, int)[pri:0, instance:com.assignments.assignment1@68bbe345]" name="testAdd" duration-ms="2" started-at="2020-07-01T08:36:51 AST" finished-at="2020-07-01T08:36:51 AST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG Assignment -> testAdd assertion passed for inputs 16, 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAdd -->
+        <test-method status="PASS" signature="testDivide(int, int)[pri:0, instance:com.assignments.assignment1@68bbe345]" name="testDivide" duration-ms="1" started-at="2020-07-01T08:36:51 AST" finished-at="2020-07-01T08:36:51 AST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG Assignment -> testDivide assertion passed for inputs 16, 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDivide -->
+      </class> <!-- com.assignments.assignment1 -->
+    </test> <!-- TestNG Assignment - Test 2 -->
+  </suite> <!-- Assignment -->
+</testng-results>
