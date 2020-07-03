@@ -1,4 +1,3 @@
-
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Assignment"  parallel="methods" thread-count="2" > <!--  Task 5 -->
 	<test name="TestNG Assignment - Test 1">

@@ -39,7 +39,6 @@ public class assignment1 {
 		Reporter.log(String.format("TestNG Assignment -> testAdd assertion passed for inputs %d, %d" , num1, num2), true);
 	}
 	
-	
 	@Test(groups = { "product" })
 	@Parameters({ "number1", "number2" })
 	public void testMultiply(int num1, int num2) {
@@ -49,7 +48,6 @@ public class assignment1 {
 		Reporter.log(String.format("TestNG Assignment -> testMultiply assertion passed for inputs %d, %d" , num1, num2), true);
 	}
 	
-	
 	@Test(groups = { "div" })
 	@Parameters({ "number1", "number2" })
 	public void testDivide(int num1, int num2) {
@@ -58,5 +56,52 @@ public class assignment1 {
 		Assert.assertFalse(result != (num1 / num2));
 		Reporter.log(String.format("TestNG Assignment -> testDivide assertion passed for inputs %d, %d" , num1, num2), true);
 	}
+	
+// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+	@Test(groups = { "sum" }, dataProvider = "numbers")
+	public void testSub(int num1, int num2) {
+		System.out.println("\nRunning Test -> testSub; Thread: " +Thread.currentThread().getId());
+		int result = Calculator.sub(num1, num2);
+		Assert.assertEquals(result, (num1 - num2));
+		Reporter.log(String.format("TestNG Assignment -> testSub assertion passed for inputs %d, %d" , num1, num2), true);
+	}
+	
+	@Test(groups = { "div" }, dataProvider = "numbers")
+	public void testRealDivide(int num1, int num2) {
+		System.out.println("\nRunning Test -> testRealDivide; Thread: " +Thread.currentThread().getId());
+		double result = Calculator.divReal(num1, num2);
+		Assert.assertNotEquals(result, (0));
+		Reporter.log(String.format("TestNG Assignment -> testRealDivide assertion passed for inputs %d, %d" , num1, num2), true);
+	}
+	
+
+	@Test(groups = { "div" }, dataProvider = "numbers")
+	public void testMod(int num1, int num2) {
+		System.out.println("\nRunning Test -> testMod; Thread: " +Thread.currentThread().getId());
+		int result = Calculator.mod(num1, num2);
+		Assert.assertEquals(result, (num1 % num2));
+		Reporter.log(String.format("TestNG Assignment -> testMod assertion passed for inputs %d" , num1, num2), true);
+	}
+	
+
+	@Test(groups = { "div" })
+	@Parameters({ "number1" })
+	public void testInverse(int num1) {
+		System.out.println("\nRunning Test -> testInverse; Thread: " +Thread.currentThread().getId());
+		double result = Calculator.inverse(num1);
+		Assert.assertNotEquals(result, (1/num1));
+		Reporter.log(String.format("TestNG Assignment -> testInverse assertion passed for inputs %d" , num1), true);
+	}
+
+	@Test(groups = { "product" })
+	@Parameters({ "number1" })
+	public void testNegated(int num1) {
+		System.out.println("\nRunning Test -> testNegated; Thread: " +Thread.currentThread().getId());
+		int result = Calculator.negate(num1);
+		Assert.assertEquals(result, ((-1) * num1));
+		Reporter.log(String.format("TestNG Assignment -> testNegated assertion passed for inputs %d" , num1), true);
+	}
+	
+	
 	
 }
