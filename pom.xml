@@ -19,7 +19,7 @@
 	        <version>3.0.0-M3</version>
 	        <configuration>
 	            <suiteXmlFiles>
-	                <suiteXmlFile>C:\Users\USER\Documents\Eclipse\Projects\GitRepo\src\test\java\com\assignments\assignment1.xml</suiteXmlFile>
+	                <suiteXmlFile>.\src\test\java\com\assignments\assignment1.xml</suiteXmlFile>
 	            </suiteXmlFiles>
 	        </configuration>
 	    </plugin>
